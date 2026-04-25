@@ -4,12 +4,19 @@
   <title>Convite de Casamento</title>
   <style>
     body {
-      text-align: center;
       font-family: Arial;
+      text-align: center;
       background: #fdf6f0;
+      padding: 20px;
     }
-    h1 {
-      font-size: 40px;
+    h1 { font-size: 40px; }
+    section { margin: 40px 0; }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #d4af37;
+      border: none;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -17,13 +24,60 @@
 <body>
 
 <h1>Gabriela & Matheus 💍</h1>
-<p>10 de Dezembro de 2026</p>
+<p>19 de agosto de 2028</p>
 
 <h2 id="contador"></h2>
 
 <audio autoplay loop controls>
   <source src="musica.mp3" type="audio/mpeg">
 </audio>
+
+<!-- SOBRE O CASAL -->
+<section>
+  <h2>💖 Nossa História</h2>
+  <p>Nos conhecemos de forma inesperada e, desde então, nossa história foi crescendo com amor, parceria e sonhos em comum. Agora queremos celebrar esse momento especial com você!</p>
+</section>
+
+<!-- CERIMÔNIA -->
+<section>
+  <h2>⛪ Cerimônia</h2>
+  <p><strong>Data:</strong> 19/08/2028</p>
+  <p><strong>Hora:</strong> 17h</p>
+  <p><strong>Local:</strong> Igreja Exemplo</p>
+</section>
+
+<!-- RECEPÇÃO -->
+<section>
+  <h2>🎉 Recepção</h2>
+  <p>Após a cerimônia, os convidados serão recebidos no salão:</p>
+  <p><strong>Local:</strong> Espaço de Eventos Exemplo</p>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+<section>
+  <h2>📍 Localização</h2>
+  <p>
+    <a href="https://maps.google.com" target="_blank">
+      Ver no Google Maps
+    </a>
+  </p>
+</section>
+
+<!-- LISTA DE PRESENTES -->
+<section>
+  <h2>🎁 Lista de Presentes</h2>
+  <p>Sua presença é o mais importante, mas se desejar nos presentear:</p>
+  <p><a href="#">Ver lista de presentes</a></p>
+</section>
+
+<!-- CONFIRMAÇÃO WHATSAPP -->
+<section>
+  <h2>✅ Confirmação de Presença</h2>
+  <p>Confirme sua presença clicando no botão abaixo:</p>
+  <a href="https://wa.me/5583987192693" target="_blank">
+    <button>Confirmar pelo WhatsApp</button>
+  </a>
+</section>
 
 <script>
   const dataCasamento = new Date("Aug 19, 2028 17:00:00").getTime();
