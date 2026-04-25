@@ -1,2 +1,42 @@
-index.html <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+<head>
+  <title>Convite de Casamento</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: #fdf6f0;
+    }
+    h1 {
+      font-size: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Gabriela & Matheus 💍</h1>
+<p>10 de Dezembro de 2026</p>
+
+<h2 id="contador"></h2>
+
+<audio autoplay loop controls>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const dataCasamento = new Date("Dec 10, 2026 17:00:00").getTime();
+
+  setInterval(() => {
+    const agora = new Date().getTime();
+    const distancia = dataCasamento - agora;
+
+    const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+    document.getElementById("contador").innerHTML =
+      dias + " dias para o grande dia 💖";
+  }, 1000);
+</script>
+
+</body>
+</html>
